@@ -23,7 +23,7 @@ We stopped arguing and ran an experiment.
 
 ---
 
-## The 9 Workflows
+## The 9 Engineering Approaches
 
 **Basic Prompting**
 
