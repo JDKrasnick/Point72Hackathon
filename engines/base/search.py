@@ -1,4 +1,3 @@
-import sys
 import time
 import chess
 import chess.polyglot
@@ -91,6 +90,7 @@ def _alpha_beta(board, depth, alpha, beta, deadline=None):
     orig_alpha = alpha
     best_score = -10_000_000
     best_move = None
+    any_completed = False
 
     for move in _order_moves(board, list(board.legal_moves), tt_move):
         board.push(move)
@@ -98,8 +98,11 @@ def _alpha_beta(board, depth, alpha, beta, deadline=None):
         board.pop()
 
         if score is None:
+            if not any_completed:
+                continue  # keep trying other moves in case they complete quickly
             return None, best_move
 
+        any_completed = True
         score = -score
         if score > best_score:
             best_score = score
@@ -110,6 +113,9 @@ def _alpha_beta(board, depth, alpha, beta, deadline=None):
             if not board.is_capture(move):
                 _history[move.from_square][move.to_square] += depth * depth
             break
+
+    if not any_completed:
+        return None, None
 
     if best_move is None:
         return 0, None
