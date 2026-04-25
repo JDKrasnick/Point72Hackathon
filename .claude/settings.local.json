@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xxd /Users/kimet/Documents/GitHub/Point72Hackathon/claude.md)",
+      "Bash(python3 *)"
+    ]
+  }
+}
