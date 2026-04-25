@@ -25,7 +25,11 @@ def _handle_position(board, line):
         idx += 7
     if idx < len(parts) and parts[idx] == 'moves':
         for uci in parts[idx + 1:]:
-            board.push_uci(uci)
+            try:
+                board.push_uci(uci)
+            except Exception as e:
+                _log(f'illegal move in position: {uci} ({e})')
+                break
 
 
 def _handle_go(board, line):
@@ -33,7 +37,9 @@ def _handle_go(board, line):
     max_depth = None
     deadline = None
 
-    if 'depth' in parts:
+    if 'infinite' in parts:
+        deadline = time.time() + 30.0  # search up to 30s, effectively unlimited for hackathon
+    elif 'depth' in parts:
         max_depth = int(parts[parts.index('depth') + 1])
     elif 'movetime' in parts:
         ms = int(parts[parts.index('movetime') + 1])
@@ -81,14 +87,22 @@ def uci_loop():
             _handle_position(board, line)
 
         elif line.startswith('go'):
-            move = _handle_go(board, line)
-            if move:
-                print(f'bestmove {move.uci()}')
-                sys.stdout.flush()
-                _log(f'> bestmove {move.uci()}')
-            else:
+            try:
+                move = _handle_go(board, line)
+                if move:
+                    print(f'bestmove {move.uci()}')
+                    sys.stdout.flush()
+                    _log(f'> bestmove {move.uci()}')
+                else:
+                    print('bestmove 0000')
+                    sys.stdout.flush()
+            except Exception as e:
+                _log(f'error in go handler: {e}')
                 print('bestmove 0000')
                 sys.stdout.flush()
+
+        elif line == 'stop':
+            pass  # search already finished synchronously; nothing to stop
 
         elif line == 'quit':
             break
