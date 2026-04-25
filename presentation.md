@@ -37,7 +37,7 @@ Four philosophies, ten engines.
 | Cluster | Engines |
 |---|---|
 | Basic Prompting | One Shot, Standard Prompting, Phase Implementation |
-| Agentic | Adversarial, AutoResearch, Tool-Augmented |
+| Agentic | Adversarial, AutoImprove, Tool-Augmented |
 | Data-driven | Stockfish Clone, Large Dataset |
 | Unconventional | Tic-Tac-Toe Baseline, Randomized Features |
 
