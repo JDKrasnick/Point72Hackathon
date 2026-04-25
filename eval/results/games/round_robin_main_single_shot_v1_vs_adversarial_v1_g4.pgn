@@ -1,0 +1,10 @@
+[Event "round_robin_main"]
+[Site "?"]
+[Date "2026.04.25"]
+[Round "?"]
+[White "Single Shot Engine"]
+[Black "Adversarial Engine"]
+[Result "0-1"]
+
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qe6+ 4. Nge2 Nf6 0-1
+

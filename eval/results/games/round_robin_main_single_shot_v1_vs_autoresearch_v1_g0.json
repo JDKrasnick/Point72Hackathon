@@ -1,0 +1,27 @@
+{
+  "game_id": "round_robin_main_single_shot_v1_vs_autoresearch_v1_g0",
+  "tournament_id": "round_robin_main",
+  "white_engine_id": "single_shot_v1",
+  "black_engine_id": "autoresearch_v1",
+  "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "result": "1-0",
+  "termination": "timeout",
+  "plies": 3,
+  "white_illegal_moves": 0,
+  "black_illegal_moves": 0,
+  "white_time_ms_total": 6442.724582972005,
+  "black_time_ms_total": 10004.083708015969,
+  "white_avg_move_ms": 3221.3622914860025,
+  "black_avg_move_ms": 5002.0418540079845,
+  "move_times_ms": [
+    3248.641707992647,
+    4998.975250025978,
+    3194.082874979358,
+    5005.108457989991
+  ],
+  "pgn_path": "results/games/round_robin_main_single_shot_v1_vs_autoresearch_v1_g0.pgn",
+  "metadata_path": "results/games/round_robin_main_single_shot_v1_vs_autoresearch_v1_g0.json",
+  "error_log": [
+    "Timeout by autoresearch_v1"
+  ]
+}

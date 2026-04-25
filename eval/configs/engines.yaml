@@ -72,8 +72,34 @@ engines:
     frameworks: [python-chess]
     created_from_existing_foundation: false
     stockfish_derived: false
-    enabled: false
+    enabled: true
     notes: "Chess engine using retrieval-augmented generation over large datasets. Disabled pending torch/faiss install."
+
+  - engine_id: adversarial_v1
+    engine_name: Adversarial Engine
+    strategy_name: Adversarial / Attacker-Builder
+    owner: ""
+    uci_command: "python3 engine.py"
+    working_directory: "../adversarial"
+    language: Python
+    frameworks: [python-chess]
+    created_from_existing_foundation: false
+    stockfish_derived: false
+    enabled: true
+    notes: "Adversarially trained engine using attacker and builder agents."
+
+  - engine_id: autoresearch_v1
+    engine_name: AutoResearch Champion
+    strategy_name: Automated Research / Self-Improvement
+    owner: ""
+    uci_command: "python3 engine.py"
+    working_directory: "../AutoResearch/champion"
+    language: Python
+    frameworks: [python-chess]
+    created_from_existing_foundation: false
+    stockfish_derived: false
+    enabled: true
+    notes: "Best engine produced by automated research loop."
 
   - engine_id: stockfish_replica_v1
     engine_name: HyperKnight (Stockfish Replica)

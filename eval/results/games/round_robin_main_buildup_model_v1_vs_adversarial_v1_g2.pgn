@@ -1,0 +1,10 @@
+[Event "round_robin_main"]
+[Site "?"]
+[Date "2026.04.25"]
+[Round "?"]
+[White "BuildUp Model"]
+[Black "Adversarial Engine"]
+[Result "0-1"]
+
+1. Nc3 d5 2. Nf3 Nf6 3. d4 Nc6 4. Bg5 Bg4 5. Nd2 Nxd4 6. h3 Bf5 7. e3 Nxc2+ 8. Ke2 Nxa1 9. Qxa1 e5 10. Qd1 Be7 11. Qa4+ Nd7 12. Bxe7 Kxe7 13. Nxd5+ Ke8 14. e4 Be6 15. Ne3 Kf8 16. Nf3 Nc5 17. Qa3 Qd6 18. Ke1 Nxe4 19. Qxd6+ cxd6 20. Bd3 Nc5 21. Bb1 e4 22. Nd4 Nd3+ 23. Bxd3 exd3 24. Kd2 Bxa2 25. Ra1 Be6 26. Kxd3 Ke7 27. Kd2 d5 28. Rd1 Kf6 29. Ke2 Rhc8 30. Kf1 Ke5 31. f4+ Ke4 32. Ke2 Kxf4 33. Rf1+ Ke4 34. Rd1 Re8 35. Kf2 Kf4 36. g3+ Ke5 37. Kg2 Ke4 38. Nxe6 fxe6 39. Ng4 h5 40. Nf2+ Kf5 41. Kg1 Rad8 42. Rd2 e5 43. Rd3 e4 44. Re3 d4 45. Rxe4 Rxe4 46. g4+ hxg4 47. hxg4+ Rxg4+ 48. Nxg4 Kxg4 49. Kf2 Rf8+ 50. Kg2 Rf3 51. b4 Rg3+ 52. Kh2 Rb3 53. b5 Rb2+ 54. Kh1 Kg3 55. b6 Rb1# 0-1
+

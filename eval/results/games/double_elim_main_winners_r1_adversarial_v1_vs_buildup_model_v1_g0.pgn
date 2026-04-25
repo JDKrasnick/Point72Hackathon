@@ -1,0 +1,10 @@
+[Event "double_elim_main"]
+[Site "?"]
+[Date "2026.04.25"]
+[Round "?"]
+[White "Adversarial Engine"]
+[Black "BuildUp Model"]
+[Result "1-0"]
+
+1. Nf3 Nc6 2. d4 Nf6 3. d5 Nb4 4. Nc3 Nfxd5 5. Nxd5 e5 6. Nxe5 d6 7. Nxb4 dxe5 8. Qxd8+ Kxd8 9. Nd3 Bd6 10. Bg5+ f6 11. Be3 Bf5 12. Nc5 Kc8 13. Kd2 Kb8 14. Kc3 Re8 15. Rd1 Rd8 16. Rg1 Re8 17. Rh1 Rd8 18. h3 Re8 19. Rd5 Rd8 20. f4 c6 21. Rd1 exf4 22. Bxf4 Bxc2 23. Bxd6+ Kc8 24. Kxc2 b6 25. Ne6 Rd7 26. Nf8 Rd8 27. e4 Kb7 28. Nxh7 f5 29. exf5 c5 30. Be2 Rac8 31. Bf3+ Ka6 32. Be2+ c4 33. b3 b5 34. bxc4 bxc4 35. Ng5 Rc6 36. Ne4 Re8 37. Bf3 Rd8 38. Nc5+ Rxc5 39. Bxc5 Rd3 40. Rxd3 cxd3+ 41. Kxd3 Ka5 42. Bxa7 Kb5 43. Rb1+ Ka5 44. Bb6+ Ka6 45. Bd4 Ka5 46. Bc3+ Ka6 47. Bb7+ Ka7 48. Bd4+ Kb8 49. Be5+ Ka7 50. Bd4+ Kb8 51. Be5+ Ka7 52. Bd4+ Kb8 53. Be5+ Ka7 54. Bd4+ Kb8 55. Be5+ Ka7 56. Bxg7 Kb8 57. Be5+ Ka7 58. Bd4+ Kb8 59. Be5+ Ka7 60. Bd4+ Kb8 61. Be5+ Ka7 62. Bd4+ Kb8 63. Be5+ Ka7 64. Bd4+ Kb8 65. Bd5+ Kc7 66. Be5+ Kd8 67. Rb8+ Kd7 68. Rb7+ Kd8 69. Bc6 Kc8 70. Rb8# 1-0
+

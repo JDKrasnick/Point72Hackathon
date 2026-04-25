@@ -9,7 +9,6 @@ import click
 
 from evaluator.engine_registry import EngineRegistry
 from evaluator.round_robin import RoundRobin
-from evaluator.double_elim import DoubleElimination
 from evaluator.stockfish_eval import StockfishEvaluator
 from evaluator.tactics_eval import TacticsEvaluator
 from evaluator.blunder_eval import BlunderEvaluator
@@ -53,23 +52,6 @@ def run_round_robin(config: str):
     rr = RoundRobin.from_config(cfg["tournament"], registry)
     rr.run()
     click.secho("Round-robin complete.", fg="green")
-
-
-@cli.command("run-double-elim")
-@click.option("--config", default="configs/tournament.yaml", show_default=True,
-              help="Path to tournament config.")
-@click.option("--seed-from", default=None,
-              help="Path to round-robin results JSON to seed bracket.")
-def run_double_elim(config: str, seed_from: str):
-    """Run a double-elimination tournament."""
-    import yaml
-    with open(config) as f:
-        cfg = yaml.safe_load(f)
-    registry = EngineRegistry.from_yaml(cfg["tournament"]["engines_config"])
-    de = DoubleElimination.from_config(cfg["tournament"], registry,
-                                       seed_results_path=seed_from)
-    de.run()
-    click.secho("Double-elimination complete.", fg="green")
 
 
 @cli.command("eval-stockfish")
@@ -150,8 +132,6 @@ def run_full_eval(ctx, config, scoring, tactics_dataset, blunder_dataset):
         tcfg = yaml.safe_load(f)["tournament"]
     ctx.invoke(validate_engines, config=tcfg["engines_config"])
     ctx.invoke(run_round_robin, config=config)
-    rr_results = f"{tcfg['results_dir']}tournaments/round_robin_main.json"
-    ctx.invoke(run_double_elim, config=config, seed_from=rr_results)
     ctx.invoke(eval_stockfish, config=config, scoring=scoring)
     ctx.invoke(eval_tactics, config=config, dataset=tactics_dataset)
     ctx.invoke(eval_blunders, config=config, dataset=blunder_dataset)

@@ -1,0 +1,28 @@
+{
+  "game_id": "double_elim_main_winners_r1_single_shot_v1_vs_random_features_v1_g1",
+  "tournament_id": "double_elim_main",
+  "white_engine_id": "random_features_v1",
+  "black_engine_id": "single_shot_v1",
+  "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "result": "0-1",
+  "termination": "timeout",
+  "plies": 4,
+  "white_illegal_moves": 0,
+  "black_illegal_moves": 0,
+  "white_time_ms_total": 15001.04408300831,
+  "black_time_ms_total": 7561.512874963228,
+  "white_avg_move_ms": 5000.348027669436,
+  "black_avg_move_ms": 3780.756437481614,
+  "move_times_ms": [
+    5000.272083008895,
+    4933.175541984383,
+    5000.363250001101,
+    2628.3373329788446,
+    5000.408749998314
+  ],
+  "pgn_path": "results/games/double_elim_main_winners_r1_single_shot_v1_vs_random_features_v1_g1.pgn",
+  "metadata_path": "results/games/double_elim_main_winners_r1_single_shot_v1_vs_random_features_v1_g1.json",
+  "error_log": [
+    "Timeout by random_features_v1"
+  ]
+}

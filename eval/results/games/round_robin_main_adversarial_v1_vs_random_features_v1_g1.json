@@ -1,0 +1,29 @@
+{
+  "game_id": "round_robin_main_adversarial_v1_vs_random_features_v1_g1",
+  "tournament_id": "round_robin_main",
+  "white_engine_id": "adversarial_v1",
+  "black_engine_id": "random_features_v1",
+  "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "result": "1-0",
+  "termination": "timeout",
+  "plies": 5,
+  "white_illegal_moves": 0,
+  "black_illegal_moves": 0,
+  "white_time_ms_total": 748.4313350287266,
+  "black_time_ms_total": 15001.553041976877,
+  "white_avg_move_ms": 249.4771116762422,
+  "black_avg_move_ms": 5000.517680658959,
+  "move_times_ms": [
+    112.39766702055931,
+    5000.553416000912,
+    192.83883398748003,
+    5000.546041992493,
+    443.19483402068727,
+    5000.453583983472
+  ],
+  "pgn_path": "results/games/round_robin_main_adversarial_v1_vs_random_features_v1_g1.pgn",
+  "metadata_path": "results/games/round_robin_main_adversarial_v1_vs_random_features_v1_g1.json",
+  "error_log": [
+    "Timeout by random_features_v1"
+  ]
+}
