@@ -1,0 +1,427 @@
+{
+  "tournament_id": "round_robin_main",
+  "type": "round_robin",
+  "engines": [
+    "phased_engine_v1",
+    "single_shot_v1",
+    "stockfish_replica_v1"
+  ],
+  "games_per_pair": 4,
+  "time_control": {
+    "base_seconds": 30,
+    "increment_seconds": 0.5
+  },
+  "random_seed": 42,
+  "status": "completed",
+  "games": [
+    {
+      "game_id": "round_robin_main_phased_engine_v1_vs_single_shot_v1_g0",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "phased_engine_v1",
+      "black_engine_id": "single_shot_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "1-0",
+      "termination": "timeout",
+      "plies": 9,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 24960.038292017998,
+      "black_time_ms_total": 19051.364416023716,
+      "white_avg_move_ms": 4992.0076584036,
+      "black_avg_move_ms": 3810.2728832047433,
+      "move_times_ms": [
+        4996.925791987451,
+        4893.749166018097,
+        4987.877708015731,
+        2563.3863330003805,
+        4994.241459004115,
+        2981.3835000095423,
+        4988.079292001203,
+        3607.8213329892606,
+        4992.914041009499,
+        5005.024084006436
+      ],
+      "pgn_path": "results/games/round_robin_main_phased_engine_v1_vs_single_shot_v1_g0.pgn",
+      "metadata_path": "results/games/round_robin_main_phased_engine_v1_vs_single_shot_v1_g0.json",
+      "error_log": [
+        "Timeout by single_shot_v1"
+      ]
+    },
+    {
+      "game_id": "round_robin_main_single_shot_v1_vs_phased_engine_v1_g1",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "single_shot_v1",
+      "black_engine_id": "phased_engine_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "1-0",
+      "termination": "timeout",
+      "plies": 13,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 23568.790249992162,
+      "black_time_ms_total": 34961.13046002574,
+      "white_avg_move_ms": 3366.970035713166,
+      "black_avg_move_ms": 4994.447208575106,
+      "move_times_ms": [
+        3184.618750005029,
+        4985.577042010846,
+        3170.743833994493,
+        4996.377917006612,
+        3870.5864580115303,
+        4989.3199170182925,
+        2835.302125022281,
+        4992.921583994757,
+        3401.683749980293,
+        4993.5833330091555,
+        4376.451999996789,
+        5002.4871669884305,
+        2729.4033329817466,
+        5000.863499997649
+      ],
+      "pgn_path": "results/games/round_robin_main_single_shot_v1_vs_phased_engine_v1_g1.pgn",
+      "metadata_path": "results/games/round_robin_main_single_shot_v1_vs_phased_engine_v1_g1.json",
+      "error_log": [
+        "Timeout by phased_engine_v1"
+      ]
+    },
+    {
+      "game_id": "round_robin_main_phased_engine_v1_vs_single_shot_v1_g2",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "phased_engine_v1",
+      "black_engine_id": "single_shot_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "0-1",
+      "termination": "timeout",
+      "plies": 2,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 9998.966083017876,
+      "black_time_ms_total": 4891.75820798846,
+      "white_avg_move_ms": 4999.483041508938,
+      "black_avg_move_ms": 4891.75820798846,
+      "move_times_ms": [
+        4993.933125020703,
+        4891.75820798846,
+        5005.032957997173
+      ],
+      "pgn_path": "results/games/round_robin_main_phased_engine_v1_vs_single_shot_v1_g2.pgn",
+      "metadata_path": "results/games/round_robin_main_phased_engine_v1_vs_single_shot_v1_g2.json",
+      "error_log": [
+        "Timeout by phased_engine_v1"
+      ]
+    },
+    {
+      "game_id": "round_robin_main_single_shot_v1_vs_phased_engine_v1_g3",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "single_shot_v1",
+      "black_engine_id": "phased_engine_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "1-0",
+      "termination": "timeout",
+      "plies": 5,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 10233.848499978194,
+      "black_time_ms_total": 14985.11579199112,
+      "white_avg_move_ms": 3411.2828333260645,
+      "black_avg_move_ms": 4995.038597330374,
+      "move_times_ms": [
+        3184.6575409872457,
+        4994.893416995183,
+        3176.6796250012703,
+        4990.169791999506,
+        3872.511333989678,
+        5000.052582996432
+      ],
+      "pgn_path": "results/games/round_robin_main_single_shot_v1_vs_phased_engine_v1_g3.pgn",
+      "metadata_path": "results/games/round_robin_main_single_shot_v1_vs_phased_engine_v1_g3.json",
+      "error_log": [
+        "Timeout by phased_engine_v1"
+      ]
+    },
+    {
+      "game_id": "round_robin_main_phased_engine_v1_vs_stockfish_replica_v1_g0",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "phased_engine_v1",
+      "black_engine_id": "stockfish_replica_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "1-0",
+      "termination": "crash",
+      "plies": 1,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 4980.486790998839,
+      "black_time_ms_total": 10.237541981041431,
+      "white_avg_move_ms": 4980.486790998839,
+      "black_avg_move_ms": 10.237541981041431,
+      "move_times_ms": [
+        4980.486790998839,
+        10.237541981041431
+      ],
+      "pgn_path": "results/games/round_robin_main_phased_engine_v1_vs_stockfish_replica_v1_g0.pgn",
+      "metadata_path": "results/games/round_robin_main_phased_engine_v1_vs_stockfish_replica_v1_g0.json",
+      "error_log": [
+        "Crash by stockfish_replica_v1: Engine stdout closed unexpectedly"
+      ]
+    },
+    {
+      "game_id": "round_robin_main_stockfish_replica_v1_vs_phased_engine_v1_g1",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "stockfish_replica_v1",
+      "black_engine_id": "phased_engine_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "0-1",
+      "termination": "crash",
+      "plies": 2,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 11.041541962185875,
+      "black_time_ms_total": 5000.251791992923,
+      "white_avg_move_ms": 5.520770981092937,
+      "black_avg_move_ms": 5000.251791992923,
+      "move_times_ms": [
+        1.4618749846704304,
+        5000.251791992923,
+        9.579666977515444
+      ],
+      "pgn_path": "results/games/round_robin_main_stockfish_replica_v1_vs_phased_engine_v1_g1.pgn",
+      "metadata_path": "results/games/round_robin_main_stockfish_replica_v1_vs_phased_engine_v1_g1.json",
+      "error_log": [
+        "Crash by stockfish_replica_v1: Engine stdout closed unexpectedly"
+      ]
+    },
+    {
+      "game_id": "round_robin_main_phased_engine_v1_vs_stockfish_replica_v1_g2",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "phased_engine_v1",
+      "black_engine_id": "stockfish_replica_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "1-0",
+      "termination": "crash",
+      "plies": 1,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 5001.461125008063,
+      "black_time_ms_total": 9.933290974004194,
+      "white_avg_move_ms": 5001.461125008063,
+      "black_avg_move_ms": 9.933290974004194,
+      "move_times_ms": [
+        5001.461125008063,
+        9.933290974004194
+      ],
+      "pgn_path": "results/games/round_robin_main_phased_engine_v1_vs_stockfish_replica_v1_g2.pgn",
+      "metadata_path": "results/games/round_robin_main_phased_engine_v1_vs_stockfish_replica_v1_g2.json",
+      "error_log": [
+        "Crash by stockfish_replica_v1: Engine stdout closed unexpectedly"
+      ]
+    },
+    {
+      "game_id": "round_robin_main_stockfish_replica_v1_vs_phased_engine_v1_g3",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "stockfish_replica_v1",
+      "black_engine_id": "phased_engine_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "0-1",
+      "termination": "crash",
+      "plies": 2,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 10.926333023235202,
+      "black_time_ms_total": 4998.322542000096,
+      "white_avg_move_ms": 5.463166511617601,
+      "black_avg_move_ms": 4998.322542000096,
+      "move_times_ms": [
+        1.3169160229153931,
+        4998.322542000096,
+        9.609417000319809
+      ],
+      "pgn_path": "results/games/round_robin_main_stockfish_replica_v1_vs_phased_engine_v1_g3.pgn",
+      "metadata_path": "results/games/round_robin_main_stockfish_replica_v1_vs_phased_engine_v1_g3.json",
+      "error_log": [
+        "Crash by stockfish_replica_v1: Engine stdout closed unexpectedly"
+      ]
+    },
+    {
+      "game_id": "round_robin_main_single_shot_v1_vs_stockfish_replica_v1_g0",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "single_shot_v1",
+      "black_engine_id": "stockfish_replica_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "1-0",
+      "termination": "crash",
+      "plies": 1,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 3185.3773330221884,
+      "black_time_ms_total": 9.686750010587275,
+      "white_avg_move_ms": 3185.3773330221884,
+      "black_avg_move_ms": 9.686750010587275,
+      "move_times_ms": [
+        3185.3773330221884,
+        9.686750010587275
+      ],
+      "pgn_path": "results/games/round_robin_main_single_shot_v1_vs_stockfish_replica_v1_g0.pgn",
+      "metadata_path": "results/games/round_robin_main_single_shot_v1_vs_stockfish_replica_v1_g0.json",
+      "error_log": [
+        "Crash by stockfish_replica_v1: Engine stdout closed unexpectedly"
+      ]
+    },
+    {
+      "game_id": "round_robin_main_stockfish_replica_v1_vs_single_shot_v1_g1",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "stockfish_replica_v1",
+      "black_engine_id": "single_shot_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "1-0",
+      "termination": "timeout",
+      "plies": 1,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 1.423250010702759,
+      "black_time_ms_total": 5005.02762501128,
+      "white_avg_move_ms": 1.423250010702759,
+      "black_avg_move_ms": 5005.02762501128,
+      "move_times_ms": [
+        1.423250010702759,
+        5005.02762501128
+      ],
+      "pgn_path": "results/games/round_robin_main_stockfish_replica_v1_vs_single_shot_v1_g1.pgn",
+      "metadata_path": "results/games/round_robin_main_stockfish_replica_v1_vs_single_shot_v1_g1.json",
+      "error_log": [
+        "Timeout by single_shot_v1"
+      ]
+    },
+    {
+      "game_id": "round_robin_main_single_shot_v1_vs_stockfish_replica_v1_g2",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "single_shot_v1",
+      "black_engine_id": "stockfish_replica_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "1-0",
+      "termination": "crash",
+      "plies": 1,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 3170.748000004096,
+      "black_time_ms_total": 9.037750016432256,
+      "white_avg_move_ms": 3170.748000004096,
+      "black_avg_move_ms": 9.037750016432256,
+      "move_times_ms": [
+        3170.748000004096,
+        9.037750016432256
+      ],
+      "pgn_path": "results/games/round_robin_main_single_shot_v1_vs_stockfish_replica_v1_g2.pgn",
+      "metadata_path": "results/games/round_robin_main_single_shot_v1_vs_stockfish_replica_v1_g2.json",
+      "error_log": [
+        "Crash by stockfish_replica_v1: Engine stdout closed unexpectedly"
+      ]
+    },
+    {
+      "game_id": "round_robin_main_stockfish_replica_v1_vs_single_shot_v1_g3",
+      "tournament_id": "round_robin_main",
+      "white_engine_id": "stockfish_replica_v1",
+      "black_engine_id": "single_shot_v1",
+      "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "result": "1-0",
+      "termination": "timeout",
+      "plies": 1,
+      "white_illegal_moves": 0,
+      "black_illegal_moves": 0,
+      "white_time_ms_total": 1.374749990645796,
+      "black_time_ms_total": 5005.0201670092065,
+      "white_avg_move_ms": 1.374749990645796,
+      "black_avg_move_ms": 5005.0201670092065,
+      "move_times_ms": [
+        1.374749990645796,
+        5005.0201670092065
+      ],
+      "pgn_path": "results/games/round_robin_main_stockfish_replica_v1_vs_single_shot_v1_g3.pgn",
+      "metadata_path": "results/games/round_robin_main_stockfish_replica_v1_vs_single_shot_v1_g3.json",
+      "error_log": [
+        "Timeout by single_shot_v1"
+      ]
+    }
+  ],
+  "standings": [
+    {
+      "engine_id": "phased_engine_v1",
+      "engine_name": "Phased Engine",
+      "games_played": 8,
+      "wins": 5,
+      "draws": 0,
+      "losses": 3,
+      "points": 5.0,
+      "illegal_moves": 0,
+      "crashes": 0,
+      "timeouts": 3,
+      "forfeit_wins": 0,
+      "forfeit_losses": 0
+    },
+    {
+      "engine_id": "single_shot_v1",
+      "engine_name": "Single Shot Engine",
+      "games_played": 8,
+      "wins": 5,
+      "draws": 0,
+      "losses": 3,
+      "points": 5.0,
+      "illegal_moves": 0,
+      "crashes": 0,
+      "timeouts": 3,
+      "forfeit_wins": 0,
+      "forfeit_losses": 0
+    },
+    {
+      "engine_id": "stockfish_replica_v1",
+      "engine_name": "HyperKnight (Stockfish Replica)",
+      "games_played": 8,
+      "wins": 2,
+      "draws": 0,
+      "losses": 6,
+      "points": 2.0,
+      "illegal_moves": 0,
+      "crashes": 6,
+      "timeouts": 0,
+      "forfeit_wins": 0,
+      "forfeit_losses": 0
+    }
+  ],
+  "pairwise": {
+    "phased_engine_v1": {
+      "single_shot_v1": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 3
+      },
+      "stockfish_replica_v1": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      }
+    },
+    "single_shot_v1": {
+      "phased_engine_v1": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 1
+      },
+      "stockfish_replica_v1": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 2
+      }
+    },
+    "stockfish_replica_v1": {
+      "phased_engine_v1": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 4
+      },
+      "single_shot_v1": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 2
+      }
+    }
+  }
+}
