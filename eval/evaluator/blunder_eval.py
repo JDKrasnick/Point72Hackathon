@@ -120,11 +120,14 @@ class BlunderEvaluator:
         for engine in self.registry.enabled_engines():
             if engine.stockfish_derived:
                 continue
+            out_path = self.results_dir / f"blunder_{engine.engine_id}.json"
+            if out_path.exists():
+                print(f"  [skip] {engine.engine_id} — results already exist")
+                continue
             print(f"\nBlunder eval: {engine.engine_id} ({len(self.positions)} positions)")
             report = self._eval_engine(engine)
             reports[engine.engine_id] = report
 
-            out_path = self.results_dir / f"blunder_{engine.engine_id}.json"
             with open(out_path, "w") as f:
                 json.dump(asdict(report), f, indent=2)
             print(

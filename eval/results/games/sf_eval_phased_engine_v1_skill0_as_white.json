@@ -4,25 +4,22 @@
   "white_engine_id": "phased_engine_v1",
   "black_engine_id": "stockfish_skill_0",
   "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-  "result": "0-1",
+  "result": "1-0",
   "termination": "timeout",
-  "plies": 4,
+  "plies": 1,
   "white_illegal_moves": 0,
   "black_illegal_moves": 0,
-  "white_time_ms_total": 14990.552000002936,
-  "black_time_ms_total": 6330.2727910049725,
-  "white_avg_move_ms": 4996.850666667645,
-  "black_avg_move_ms": 3165.1363955024863,
+  "white_time_ms_total": 4983.993041998474,
+  "black_time_ms_total": 5000.7180419925135,
+  "white_avg_move_ms": 4983.993041998474,
+  "black_avg_move_ms": 5000.7180419925135,
   "move_times_ms": [
-    4988.740917004179,
-    4999.589582992485,
-    4996.78554199636,
-    1330.6832080124877,
-    5005.0255410023965
+    4983.993041998474,
+    5000.7180419925135
   ],
   "pgn_path": "results/games/sf_eval_phased_engine_v1_skill0_as_white.pgn",
   "metadata_path": "results/games/sf_eval_phased_engine_v1_skill0_as_white.json",
   "error_log": [
-    "Timeout by phased_engine_v1"
+    "Timeout by stockfish_skill_0"
   ]
 }

@@ -92,11 +92,14 @@ class StockfishEvaluator:
         for engine in self.registry.enabled_engines():
             if engine.stockfish_derived and engine.engine_id.startswith("stockfish"):
                 continue  # don't benchmark Stockfish against itself
+            out_path = self.results_dir / f"stockfish_eval_{engine.engine_id}.json"
+            if out_path.exists():
+                print(f"  [skip] {engine.engine_id} — results already exist")
+                continue
             print(f"\nStockfish eval: {engine.engine_id}")
             record = self._eval_engine(engine)
             records[engine.engine_id] = record
 
-            out_path = self.results_dir / f"stockfish_eval_{engine.engine_id}.json"
             with open(out_path, "w") as f:
                 json.dump(asdict(record), f, indent=2)
             print(f"  Saved to {out_path}")

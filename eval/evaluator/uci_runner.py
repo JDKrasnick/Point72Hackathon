@@ -85,6 +85,7 @@ class UCIEngine:
             stderr=subprocess.PIPE,
             text=True,
             bufsize=1,
+            cwd=self.config.working_directory or None,
         )
         # Background thread pumps stdout into a queue so reads are non-blocking
         self._stdout_queue = queue.Queue()

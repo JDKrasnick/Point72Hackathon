@@ -50,6 +50,8 @@ class EngineConfig:
     uci_options: dict = field(default_factory=dict)
     # If set, the engine uses "go depth N" instead of "go movetime/wtime/btime"
     max_search_depth: Optional[int] = None
+    # If set, the engine process is launched with this as its working directory
+    working_directory: Optional[str] = None
 
     # ------------------------------------------------------------------ #
     #  UCI health check                                                    #
@@ -69,6 +71,7 @@ class EngineConfig:
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 text=True,
+                cwd=self.working_directory or None,
             )
         except Exception as exc:
             return False, f"Failed to launch process: {exc}"
@@ -135,6 +138,7 @@ class EngineConfig:
             requires_network=data.get("requires_network", False),
             uci_options=data.get("uci_options", {}),
             max_search_depth=data.get("max_search_depth"),
+            working_directory=data.get("working_directory"),
         )
 
 

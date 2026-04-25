@@ -2,7 +2,7 @@ tournament:
   tournament_id: round_robin_main
   type: round_robin
   engines_config: configs/engines.yaml
-  games_per_pair: 4
+  games_per_pair: 5
   random_seed: 42
   time_control:
     base_seconds: 30
