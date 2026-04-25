@@ -3,7 +3,6 @@
 
 ---
 
-> [TO FILL: one sentence core finding]
 
 ---
 
