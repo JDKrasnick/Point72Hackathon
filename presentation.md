@@ -176,16 +176,3 @@ We went in thinking this was a chess problem.
 It turned out to be a workflow problem.
 
 The chess engine was just the test harness.
-
----
-
-## Live Demo
-
-Open **`demo.html`** in a browser.
-
-- Left panel — **Builder Agent:** generates the engine, applies fixes from each critique round
-- Right panel — **Attacker Agent:** probes for weaknesses, returns specific exploits to the builder
-- Center — **Chess board** playing a live game as the engine evolves through 5 iterations
-- Iteration dots and strength score update in real time as each cycle completes
-
-Click **▶ Start Demo** to run. Click **↺ Reset** to replay.
