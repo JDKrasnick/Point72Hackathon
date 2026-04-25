@@ -25,7 +25,7 @@ So we ran an experiment.
 
 - 10 engines, 10 workflows, same time budget
 - Shared base `CLAUDE.md` for standardization
-- Single move interface — every engine plugs into the same harness
+- Single move interface — every engine plugs into the same evaluation system. 
 - Results logged automatically, no manual entry
 
 ---
@@ -45,7 +45,7 @@ Four philosophies, ten engines.
 
 ---
 
-## The Harness
+## The Evals
 
 The one shared artifact every engine plugs into equally.
 
@@ -54,7 +54,7 @@ The one shared artifact every engine plugs into equally.
 - Illegal moves auto-adjudicated as a loss
 - Results logged automatically
 
-**Built by:** [NAME] — while the other four built engines in parallel.
+**Built by:** [Ishan] — while the other four built engines in parallel.
 
 ---
 
