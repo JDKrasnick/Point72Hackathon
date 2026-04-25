@@ -1,4 +1,4 @@
-# Which AI Development Workflow Actually Wins?
+# The Workflow Gambit: A Controlled Evaluation of AI-Assisted Development Strategies for Chess Engine Programming
 **Cubist Hackathon 2026**
 
 ---
